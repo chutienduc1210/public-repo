@@ -75,34 +75,7 @@ function Export-IfNotEmpty {
     }
 }
 
-# # Function to check and install a PowerShell module
-# function Get-InstallModule {
-#     param (
-#         [string]$ModuleName
-#     )
 
-#     $module = Get-InstalledModule | Where-Object { $_.Name -eq $ModuleName }
-
-#     if ($module) {
-#         Write-Host "Required module '$ModuleName' is already installed." -ForegroundColor Green
-#     } else {
-#         Write-Host "Module '$ModuleName' is not installed. Trying to install the required module..." -ForegroundColor Yellow
-#         try {
-#             Install-Module -Name $ModuleName -ErrorAction Stop
-#             Write-Host "Module '$ModuleName' is installed." -ForegroundColor Green
-#         } catch {
-#             Write-Host "Failed to install '$ModuleName'. The script will stop. Please try to install this module manually before re-running the script." -ForegroundColor Red
-#             exit
-#         }
-#     }
-
-#     # Import the module
-#     Import-Module -Name $ModuleName
-# }
-
-
-# # Check and install Microsoft Graph Users Powershell
-# Get-InstallModule -ModuleName "Microsoft.Graph.Users"
 Import-Module -Name Microsoft.Graph.Users
 Write-Host "Connecting to Microsoft Graph Users Powershell. Please enter your credentials with Global Administrator permission." -ForegroundColor Yellow
 Connect-MgGraph -Scopes "User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All"
@@ -197,8 +170,6 @@ foreach ($user in $created_objects) {
         }
     }
 }
-
-
 
 Export-IfNotEmpty -DataArray $existed_users -FilePath .\Existed_users.csv
 Export-IfNotEmpty -DataArray $created_objects -FilePath .\Created_users.csv
