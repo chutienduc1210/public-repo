@@ -36,7 +36,7 @@ function Send-Email {
 </html>
 "@
     # Send email
-    Send-MailMessage -BodyAsHtml -Body $body -From "Do-not-reply@M365x61560265.OnMicrosoft.com" -SmtpServer smtp.office365.com -Port 587 -Subject "Your Office 365 Account Credentials" -To $To -UseSsl -Credential $Cred
+    Send-MailMessage -BodyAsHtml -Body $body -From "do-not-reply@example.com" -SmtpServer smtp.office365.com -Port 587 -Subject "Your Office 365 Account Credentials" -To $To -UseSsl -Credential $Cred
 }
 
 function Generate-randomString {
