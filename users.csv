@@ -1,6 +1,6 @@
 ﻿UserPrincipalName,Gmail,MailNickname,GivenName,Surname,DisplayName,MobilePhone,OfficeLocation,JobTitle,Department,CompanyName,UsageLocation
-user1@M365x61560265.onmicrosoft.com,d.chu@noventiq.com,user1,Test,User 01,Test User.01,1111111111,HaNoi,Dev,IT,Company 1,VN
-user2@M365x61560265.onmicrosoft.com,d.chu@noventiq.com,user2,Test,User 02,Test User.02,2222222222,HCM,Test,HR,Company 2,VN
-user3@M365x61560265.onmicrosoft.com,d.chu@noventiq.com,user3,Test,User 03,Test User.03,3333333333,HaNoi,QA,QA,Company 3,VN
-user4@M365x61560265.onmicrosoft.com,d.chu@noventiq.com,user4,Test,User 04,Test User.04,4444444444,HoChiMinh,DEVOPS,PR,Company 4,VN
-user5@M365x61560265.onmicrosoft.com,d.chu@noventiq.com,user5,Test,User 05,Test User.05,5555555555,Lao,Consult,Tech,Company 5,VN
+user1@M365x61560265.onmicrosoft.com,user1@companydomain.com,user1,Test,User 01,Test User.01,1111111111,HaNoi,Dev,IT,Company 1,VN
+user2@M365x61560265.onmicrosoft.com,user2@companydomain.com,user2,Test,User 02,Test User.02,2222222222,HCM,Test,HR,Company 2,VN
+user3@M365x61560265.onmicrosoft.com,user3@companydomain.com,user3,Test,User 03,Test User.03,3333333333,HaNoi,QA,QA,Company 3,VN
+user4@M365x61560265.onmicrosoft.com,user4@companydomain.com,user4,Test,User 04,Test User.04,4444444444,HoChiMinh,DEVOPS,PR,Company 4,VN
+user5@M365x61560265.onmicrosoft.com,user5@companydomain.com,user5,Test,User 05,Test User.05,5555555555,Lao,Consult,Tech,Company 5,VN
